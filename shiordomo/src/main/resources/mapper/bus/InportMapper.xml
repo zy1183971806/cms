@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.shiordomo.bus.mapper.InportMapper">
+    <insert id="addInportBook">
+        insert into bus_book( bookname, press, author,isbn
+        , price, quantity, productcode) values (#{bookname},#{press},#{author},
+        #{isbn},#{inportprice},#{quantity},#{productcode})
+    </insert>
+    <update id="updateInportBook" >
+        update bus_book set quantity = quantity + #{quantity} where bookname = #{bookname}
+    </update>
+
+
+</mapper>
