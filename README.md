@@ -1,2 +1,2 @@
 # cms
-毕设作品，layui+springboot
+高校教材管理系统，layui+springboot
